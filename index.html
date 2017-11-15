@@ -6,8 +6,6 @@
 <style>
   body{
 
-    margin-left: 100px;
-    margin-right: 100px;
     background-color: #a0c4ff
   }
   table{
@@ -31,8 +29,21 @@
   .main{
     display: flex;
   }
-
+  .about{
+    margin-left: 20%;
+    margin-right: 20%;
+    align: center;
   }
+  }
+
+  @media only screen and (max-width: 799px){
+    .about{
+      margin-left: 3%;
+      margin-right: 3%;
+    }
+  }
+
+
 
 .inline-b{
   display: inline-block;
@@ -61,23 +72,91 @@
   .tall{
     height: 100%;
   }
+  .profile-link p{
+    width: 100px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .profile-link img{
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 8px rgba(0,0,0,0.3);
+    display: block;
+    margin: auto;
+  }
+
+  .profile-link{
+    align: center;
+    margin:auto;
+    width: 100px;
+  }
+
+  @media only screen and (min-width: 1100px) {
+    .top{
+    display: flex;
+    margin:auto;
+  }
+  h1{
+    margin-left: 30px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .top, .profile-links{
+  display: flex;
+  margin:auto;
+}
+}
+
+@media only screen and (max-width: 1099px) {
+  .profile-links{
+  display: flex;
+  margin:auto;
+
+}
+h1{
+  font-size: 10vw;
+}
+}
 </style>
 
 <head>
 
-<title>Ania</title>
+<title>Ania Makes</title>
 </head>
 
 <body>
   <div class="head">
-  <h1>-- Ania Makes -- </h1>
+    <div class="top">
+      <div class="page-title">
+      <h1>-- Ania Makes -- </h1>
+    </div>
+<div class="profile-links">
+    	<div class="profile-link">
+        <a href="https://github.com/AniaMakes/fc-profile"><img src="images\github-logo.png" alt="GitHub logo" height="50px"></a>
+        <p>GitHub repo of this site's source code</p>
+    	</div>
+    	<div class="profile-link">
+        <a href="https://www.freecodecamp.org/aniamakes"><img src="images\freecodecamp-logo.png" alt="free code camp logo" height="50px"></a>
+        <p>FreeCodeCamp profile</p>
+    	</div>
+    	<div class="profile-link">
+        <a href="https://www.codewars.com/users/AniaMakes"><img src="images\codewars-logo.png" alt="codewars logo" height="50px"</a>
+        <p>Codewars profile</p>
+    	</div>
+    	<div class="profile-link">
+        <a href="http://www.linkedin.com/in/annarygielska"><img src="images\linkedin-logo.png" alt="linkedIn logo" height="50px"></a>
+        <p>LinkedIn</p>
+    	</div>
+</div>
+    </div>
   <a href="#about"><p class="inline-b">About me</p></a>
   <a href="#links"><p class="inline-b">Links to my profiles</p></a>
   <a href="#tidbits"><p class="inline-b">Tidbits about me</p></a>
   <a href="#misc-links"><p class="inline-b">Links to useful places</p></a>
 </div>
 <hr>
-<div class="main tall">
+
   <div id="about" class="about">
   <h2>A bit about myself</h2>
   <p>I'm trying to think of the first time I encountered coding, and it must go all the way to high school, when we were taught basics of  Logo. At the time I found it almost too easy and too... simple - drawing circles and squares has a limited scope, after all.</p>
@@ -86,29 +165,9 @@
   <p>One of my major motivators in life is to make a difference; to streamline and optimise processes. I think that pursuing a career in Software Development or website development would result in me having a fulfilling career.</p>
   <p>I am currently doing a part-time, distance learning, Computer Sciences MSc. However, I found, it is severely lacking not only in modern practices in curriculum, but also practical projects. I learn best by doing, and I hope joining Founders & Coders will be a perfect opportunity to gain practical skills and build up a portfolio of projects.<p>
   </div>
-  <hr>
-  <div id="links" class="links slim">
-  <h2>Links to my profiles</h2>
-  <table>
-    <tr>
-      <td>
-    <a href="https://github.com/AniaMakes/fc-profile"><img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo" height="100px"></a></td></td>
-         <td>GitHub repo of this site's source code</td>
-  </tr>
-        <tr>
-   <td><a href="https://www.freecodecamp.org/aniamakes"><img src="https://avatars0.githubusercontent.com/u/9892522?v=4&s=400" alt="free code camp logo" height="100px"></a>
-      <td>My FreeCodeCamp profile</td>
-      </tr>
-<tr><td><a href="https://www.codewars.com/users/AniaMakes"><img src="https://shankxwebdev.com/wp-content/uploads/2016/03/Screen-Shot-2016-03-28-at-7.51.42-AM.png" alt="codewars logo" height="100px"</a></td>
-  <td>My codewars profile</td>
-</tr>
-<tr>
-  <td><a href="http://www.linkedin.com/in/annarygielska"><img src="http://1000logos.net/wp-content/uploads/2017/03/LinkedIn-Logo-500x500.png" alt="linkedIn logo" height="100px"></a></td>
-  <td>My LinkedIn profile</td>
-</tr>
-  </table>
-</div>
-</div>
+
+
+
  <hr>
  <div class="main tall">
         <div id="tidbits" class="tidbits slim">
