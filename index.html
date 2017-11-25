@@ -3,6 +3,7 @@
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
+<link href="feature-code.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
@@ -115,6 +116,17 @@
       text-align: center;
     }
   }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo{
+    margin: 20px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+  }
 </style>
 
 <head>
@@ -138,7 +150,7 @@
           <p>FreeCodeCamp profile</p>
         </div>
         <div class="profile-link">
-          <a href="https://www.codewars.com/users/AniaMakes"><img src="images\codewars-logo.png" alt="codewars logo" height="50px"</a>
+          <a href="https://www.codewars.com/users/AniaMakes"><img src="images\codewars-logo.png" alt="codewars logo" height="50px"></a>
           <p>Codewars profile</p>
         </div>
         <div class="profile-link">
@@ -191,6 +203,40 @@
     <p>I play field hockey in the local league. Great fun! This season (2017-18) is my third one in the role of Umpire Liaison Officer. My job is to coordinate umpires and assign them to games. A bit like herding cats!</p>
     <p>I enjoy gardening. This past summer I had nearly a dozen of tomato plants on the go! As always, they have been attacked by blight, but careful removal of affected parts made them survive until mid-September. When it was time for making all the green
       tomato chutney in the world!</p>
+<p>
+      I indulge my creative side by cross-stitching and knitting. Thinking about it, knitting is not that dissimilar to coding! Knitting patterns are, after all, a form of code… That would be an interesting scheme: teaching knitters how to code by first getting them to write patterns in pseudo-code and then in actual programming languages…
+  </p><p>
+      I also love taking photo-portraits. This can be difficult as it involves finding willing subjects. I don't interact with cats much, so I can't provide token photos of cats, but here are some of a much loved dog. <b>Click on the photos to see a bigger version.</b>
+</p>
+<div class="gallery" id="dog-photos">
+
+<a class="feature" href="#dog1">
+<img class="photo" src="images\dog-1.jpg" alt="dog portrait 1" height="150px">
+</a>
+<div class="feature-target" id="dog1">
+  <img class="photo" src="images\dog-1.jpg" alt="dog portrait 1"/>
+  <a class="feature-close" href="#dog-photos"></a>
+</div>
+
+<a class="feature" href="#dog3">
+<img class="photo" src="images\dog-3.jpg" alt="dog portrait 3" height="150px">
+</a>
+<div class="feature-target" id="dog3">
+  <img class="photo" src="images\dog-3.jpg" alt="dog portrait 3"/>
+  <a class="feature-close" href="#dog-photos"></a>
+</div>
+
+
+<a class="feature" href="#dog2">
+<img class="photo" src="images\dog-2.jpg" alt="dog portrait 2" height="150px">
+</a>
+<div class="feature-target" id="dog2">
+  <img class="photo" src="images\dog-2.jpg" alt="dog portrait 2"/>
+  <a class="feature-close" href="#dog-photos"></a>
+</div>
+
+</div>
+
   </div>
   <div id="misc-links" class="main-content">
     <h2>Links to useful places around the Web</h2>
