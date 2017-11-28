@@ -91,12 +91,26 @@ transform:rotate(-45deg);
 
 /* Uses the :target pseudo-class to perform the animations upon clicking the .lightbox-target anchor */
 
-.feature-target:target {
-opacity: 1;
-top: 0;
-bottom: 0;
-margin-left: -20%;
+@media only screen and (min-width: 800px) {
+  .feature-target:target{
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    margin-left: -20%;
+  }
 }
+
+@media only screen and (max-width: 799px) {
+  .feature-target:target {
+    opacity: 1;
+    top: 0;
+    bottom: 0;
+    margin-left: -5%;
+  }
+}
+
+
+
 
 .feature-target:target img {
 max-height: 70vh;

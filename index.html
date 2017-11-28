@@ -4,130 +4,8 @@
 <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet">
 <link href="feature-code.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<style>
-  body {
-    background-color: #dadada;
-  }
-
-  h1 {
-    font-family: Permanent Marker;
-    font-size: 50px;
-  }
-
-  h2 {
-    font-family: Barlow;
-    margin: auto;
-  }
-
-  p {
-    font-family: Raleway;
-  }
-
-  ul {
-    font-family: Raleway;
-  }
-
-  @media only screen and (min-width: 800px) {
-    .main-content {
-      margin-left: 20%;
-      margin-right: 20%;
-      margin-bottom: 5%;
-      align: center;
-    }
-  }
-
-  @media only screen and (max-width: 799px) {
-    .main-content {
-      margin-left: 3%;
-      margin-right: 3%;
-      margin-bottom: 15%;
-    }
-  }
-
-  .internal-links {
-    text-align: center;
-  }
-
-  .inline-b {
-    display: inline-block;
-    padding-left: 20px;
-  }
-
-.inline-b a:link{
-  color: inherit;
-}
-
-.inline-b a:visited{
-  color:inherit;
-}
-
-  .profile-link p {
-    width: 100px;
-    font-size: 10px;
-    text-align: center;
-  }
-
-  .profile-link img {
-    border-radius: 20%;
-    box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.3);
-    display: block;
-    margin: auto;
-  }
-
-  .profile-link {
-    align: center;
-    width: 100px;
-  }
-
-  @media only screen and (min-width: 1100px) {
-    .top {
-      display: flex;
-      margin: auto;
-    }
-    h1 {
-      margin-left: 30px;
-    }
-  }
-
-  @media only screen and (min-width: 1100px) {
-    .top,
-    .profile-links {
-      display: flex;
-      margin: auto;
-    }
-    .profile-links {
-      align-self: center;
-    }
-  }
-
-  @media only screen and (max-width: 1099px) {
-    .profile-links {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      flex-basis: auto;
-      margin: auto;
-
-    }
-    h1 {
-      font-size: 10vw;
-      text-align: center;
-    }
-  }
-
-  .gallery {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .photo{
-    margin: 20px;
-    border: 3px solid black;
-    box-shadow: 0px 0px 8px rgba(0,0,0,.3);
-  }
-</style>
 
 <head>
 
@@ -153,10 +31,7 @@
           <a href="https://www.codewars.com/users/AniaMakes"><img src="images\codewars-logo.png" alt="codewars logo" height="50px"></a>
           <p>Codewars profile</p>
         </div>
-        <div class="profile-link">
-          <a href="http://www.linkedin.com/in/annarygielska"><img src="images\linkedin-logo.png" alt="linkedIn logo" height="50px"></a>
-          <p>LinkedIn</p>
-        </div>
+
       </div>
     </div>
     <hr>
@@ -181,17 +56,38 @@
   <div id="about" class="main-content">
     <h2>A bit about myself</h2>
     <p>I'm trying to think of the first time I encountered coding, and it must go all the way to high school, when we were taught basics of Logo. At the time I found it almost too easy and too... simple - drawing circles and squares has a limited scope,
-      after all.</p>
-    <p>It wasn't until more recently that I started to think of coding more seriously.</p>
-    <p>A charity I worked for was a DBS umbrella organisation and we were responsible for keeping track of applications. The only way of seeing if a certificate was issued, was to go to a particular website, input the form code and some other information.
-      My lovely boss was doing it manually without complaining. Then she went on holiday. One day I decided to help out and do some of the tracking. Suffice to say that within 10 minutes I started to think how to automate the process. With help of a friend,
-      I built a little script which cut down human involvement of the process from hours to minutes. I spoke with said boss recently, and she disclosed that the charity has been able to continue taking on new clients for this service, and that this would
-      not have been possible without the little script and the difference it makes in human time needed for the process. I am hoping to expand the functionality of the script to deal with potential errors (the script is currently bare-bones-does-the-job),
-      as well as a GUI.</p>
-    <p>One of my major motivators in life is to make a difference; to streamline and optimise processes. I think that pursuing a career in Software Development or website development would result in me having a fulfilling career.</p>
-    <p>I am currently doing a part-time, distance learning, Computer Sciences MSc. However, I found, it is severely lacking not only in modern practices in curriculum, but also practical projects. I learn best by doing, and I hope joining Founders & Coders
-      will be a perfect opportunity to gain practical skills and build up a portfolio of projects.
-      <p>
+      after all. This was well before the time of Scratch; the impression I got back then was that coding was the domain of skilled mathematicians and definitely not something anybody off the street can do.
+    </p>
+    <p>I used to work for a charity called SCA. As a charity, it mainly relies on grants to fund its projects - it also has a supplementary income which is DBS (criminal record check) processing. The only way of seeing if a certificate was issued, was to
+      go to a particular website, input the form code and some other information. My lovely boss was doing it manually without complaining. She was away one week - a well deserved holiday - and I decided to help out and do some of the tracking in her
+      absence. Suffice to say that within 10 minutes I started to think how to automate the process. With the help from a friend, I built a little script which cut down human involvement of the process from hours to minutes. When I demonstrated the script
+      in action, my boss thought it was magic - she wondered how I knew this could be done. I think at the time my logic was limited to: it's repetitive and involves computers; thus it should be possible to automate it!
+    </p>
+    <p>I spoke with SCA's boss recently, and she disclosed that the charity has been able to continue taking on new clients for this service, and that this would not have been possible without the little script and the difference it makes in human time needed
+      for the process. I am hoping to expand the functionality of the script to deal with potential errors, update it so it deals with more modern MS Office files, and add a GUI.
+    </p>
+    <p>At SCA I also acted as the IT Officer and the webmaster; this, along with the little programming I did, roused my interest in pursuing career - in one or the other aspect of IT. My experience at SCA allowed me to transition to a job which I hoped
+      would allow me to expand on my IT Support knowledge. As it became clear that the support would be generally limited to turn-it-off-and-on, I decided to explore ways of expanding my knowledge to help with my next career step.
+    </p>
+    <p>I signed up for and am currently doing a part-time, distance learning, Computer Sciences MSc. However, I found, it is severely lacking not only in modern practices in curriculum, but also practical projects.
+    </p>
+    <p>Earlier this year I took the opportunity to join a small start-up for a short training contract as a trainee developer. I learned how to create a basic to-do list website using Django framework, to create website to a design using CSS, jquery, and
+      bootstrap. This experience reassured me that I enjoy programming and that it is something I want to do career wise.
+    </p>
+    <p>Having since done some of the FreeCodeCamp exercises, I realised I learn best by doing, and I hope joining Founders & Coders will be a perfect opportunity to gain practical skills and build up a portfolio of projects. As I still consider myself to
+      be a beginner when it come to programming (possibly due to the fact that a significant proportion of my friends do coding for living), I know that I need a learning opportunity which is structured, which encourages questions, and one that has well
+      defined aims and objectives for each step of progression - all of which Founders and Coders provides.
+    </p>
+    <p></p>
+    <h3>Long term objectives</h3>
+    <ul>
+      <li>make a difference
+      </li>
+      <li>streamline and optimise processes
+      </li>
+      <li>help small businesses and small charities thrive by bringing them into the 21st century
+      </li>
+    </ul>
   </div>
 
 
@@ -203,39 +99,41 @@
     <p>I play field hockey in the local league. Great fun! This season (2017-18) is my third one in the role of Umpire Liaison Officer. My job is to coordinate umpires and assign them to games. A bit like herding cats!</p>
     <p>I enjoy gardening. This past summer I had nearly a dozen of tomato plants on the go! As always, they have been attacked by blight, but careful removal of affected parts made them survive until mid-September. When it was time for making all the green
       tomato chutney in the world!</p>
-<p>
-      I indulge my creative side by cross-stitching and knitting. Thinking about it, knitting is not that dissimilar to coding! Knitting patterns are, after all, a form of code… That would be an interesting scheme: teaching knitters how to code by first getting them to write patterns in pseudo-code and then in actual programming languages…
-  </p><p>
+    <p>
+      I indulge my creative side by cross-stitching and knitting. Thinking about it, knitting is not that dissimilar to coding! Knitting patterns are, after all, a form of code… That would be an interesting scheme: teaching knitters how to code by first getting
+      them to write patterns in pseudo-code and then in actual programming languages…
+    </p>
+    <p>
       I also love taking photo-portraits. This can be difficult as it involves finding willing subjects. I don't interact with cats much, so I can't provide token photos of cats, but here are some of a much loved dog. <b>Click on the photos to see a bigger version.</b>
-</p>
-<div class="gallery" id="dog-photos">
+    </p>
+    <div class="gallery" id="dog-photos">
 
-<a class="feature" href="#dog1">
+      <a class="feature" href="#dog1">
 <img class="photo" src="images\dog-1.jpg" alt="dog portrait 1" height="150px">
 </a>
-<div class="feature-target" id="dog1">
-  <img class="photo" src="images\dog-1.jpg" alt="dog portrait 1"/>
-  <a class="feature-close" href="#dog-photos"></a>
-</div>
+      <div class="feature-target" id="dog1">
+        <img class="photo" src="images\dog-1.jpg" alt="dog portrait 1" />
+        <a class="feature-close" href="#dog-photos"></a>
+      </div>
 
-<a class="feature" href="#dog3">
+      <a class="feature" href="#dog3">
 <img class="photo" src="images\dog-3.jpg" alt="dog portrait 3" height="150px">
 </a>
-<div class="feature-target" id="dog3">
-  <img class="photo" src="images\dog-3.jpg" alt="dog portrait 3"/>
-  <a class="feature-close" href="#dog-photos"></a>
-</div>
+      <div class="feature-target" id="dog3">
+        <img class="photo" src="images\dog-3.jpg" alt="dog portrait 3" />
+        <a class="feature-close" href="#dog-photos"></a>
+      </div>
 
 
-<a class="feature" href="#dog2">
+      <a class="feature" href="#dog2">
 <img class="photo" src="images\dog-2.jpg" alt="dog portrait 2" height="150px">
 </a>
-<div class="feature-target" id="dog2">
-  <img class="photo" src="images\dog-2.jpg" alt="dog portrait 2"/>
-  <a class="feature-close" href="#dog-photos"></a>
-</div>
+      <div class="feature-target" id="dog2">
+        <img class="photo" src="images\dog-2.jpg" alt="dog portrait 2" />
+        <a class="feature-close" href="#dog-photos"></a>
+      </div>
 
-</div>
+    </div>
 
   </div>
   <div id="misc-links" class="main-content">
@@ -258,7 +156,7 @@
     <p>Codewars related</p>
     <ul>
       <li><a href="https://github.com/mcelearr/writing-your-own-kata">mcelearr's page on how to make a new kata on codewars</a></li>
-      <li></li>
+
     </ul>
     <hr width="30%" align="left">
     <p>Code-in-action services</p>
